@@ -12,3 +12,19 @@ Redirect your users to the following URLs
 
 `GET https://www.yellowant.com/api/oauth2/authorize/`
 
+### Query Parameters {#query-parameters}
+
+| Parameter | Description |
+| :--- | :--- |
+| client\_id | The client Id from your application developer page |
+| response\_type | Set value to ‘code’ |
+| redirect\_url | The url to redirect the user after authentication |
+| state | The state variable to store any user information\(optional\) |
+
+
+
+**On a successful redirect, the user will be shown a page, where the user can choose a team account to authenticate**
+
+  
+
+
