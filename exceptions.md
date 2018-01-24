@@ -1,4 +1,4 @@
-# Errors {#errors}
+# Exceptions {#errors}
 
 The YellowAnt API uses the following error codes:
 
