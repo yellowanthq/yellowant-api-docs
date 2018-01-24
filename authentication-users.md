@@ -62,8 +62,6 @@ access_token = access_token_dict['access_token']
 user_yellowant_object = YellowAnt(access_token=access_token)
 ```
 
-{% endmethod %}
-
 
 ```
 The above command returns JSON structured like this:
@@ -76,6 +74,9 @@ The above command returns JSON structured like this:
   "refresh_token": "ei7238fFWef7c0oGNb6gd34n087xb390yx8b4x8",  
 }
 ```
+{% endmethod %}
+
+
 
 {% method %}
 ###3. Revoking a user token
