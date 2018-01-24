@@ -6,6 +6,7 @@
 * [Registering your application](registering-your-application.md)
 * [Authentication Users](authentication-users.md)
 * [User](user.md)
+* [User Integrations](user-integrations.md)
 
 ## Methods
 
