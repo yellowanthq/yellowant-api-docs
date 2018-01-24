@@ -70,7 +70,6 @@ The above command returns JSON structured like this:
 ```
 
 ```py
-
 {
   "access_token": "B69$9v7v6#8ydepiuXheTodDWDc33rVYXEviT4d3d",
   "expires": 31536000,
