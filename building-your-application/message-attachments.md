@@ -86,6 +86,62 @@ Messages can also contain attachments - which are formatted as a list view withi
 | value | The value of the Field |
 | short | 0 if each field must occupy a row, 1 - if multiple fields can be displayed per row |
 
+{% sample lang="py" %}
+
+```
+tasks = [{
+  "title":"Bundle middleman error fix",
+  "body": "Getting this error when running bundle exec middleman server",
+  "status":"open",
+  "project":"PBL-1",
+  "initiator":{
+    "name":"Boo-Boo Bear",
+    "id":"463",
+    "url":"https://www.bitbucket.org/booboo/",
+    "image_url":"https://www.jellystone.com/park/bears/booboo.jpg"
+  },
+  "priority":"high"
+},{
+  "title":"Dev Branch: Links to anchor tags load H1 rather than target link",
+  "body": "I recently added static TOC/navigation to my flavor of slate and now, when an H2/H3/H4 link is loaded, it loads to the H1 anchor rather than the appropriate anchor linked.",
+  "status":"open",
+  "project":"PBL-1",
+  "initiator":{
+    "name":"Yogi Bear",
+    "id":"461",
+    "url":"https://www.bitbucket.org/yogi/",
+    "image_url":"https://www.jellystone.com/park/bears/yogi.jpg"
+  },
+  "priority":"low"
+}
+]
+
+
+message = MessageClass()
+message.title = "Open JIRA tickets"
+message.message_text = "Following are the open JIRA tickets for project PBL-1"
+
+for task in tasks:
+    attachment = MessageAttachmentsClass()
+    attachment.title = task['title']
+    attachment.author_name = task['initiator']['name']
+    attachment.author_link = task['initiator']['url']
+    attachment.author_icon = task['initiator']['image_url']
+
+    field_status = AttachmentFieldsClass()
+    field_status.title = "Status"
+    field_status.value = task['status']
+    attachment.attach_field(field_status)
+
+    field_priority = AttachmentFieldsClass()
+    field_priority.title = "Status"
+    field_priority.value = task['status']
+    attachment.attach_field(field_priority)
+
+    message.attach(attachment)
+
+    return message.to_json()
+```
 
 
 {% endmethod %}  
