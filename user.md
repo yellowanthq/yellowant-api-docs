@@ -10,7 +10,7 @@ Returns the profile details for the authenticated user.
 
 
 
-{% sample lang="py" }
+{% sample lang="py" %}
 
 ```py
 
