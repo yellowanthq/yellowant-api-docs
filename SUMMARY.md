@@ -9,6 +9,7 @@
 * [User Integrations](user-integrations.md)
 * [Building your application](building-your-application.md)
   * [Processing user commands](building-your-application/processing-user-commands.md)
+  * [Constructing a Message](building-your-application/constructing-a-message.md)
 
 ## Methods
 
