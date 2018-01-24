@@ -10,8 +10,12 @@
                     "default": true
                 },
                 {
-                    "lang": "go",
-                    "name": "Go"
+                    "lang": "py",
+                    "name": "Python"
+                },
+                {
+                    "lang": "rb",
+                    "name": "Ruby"
                 }
             ]
         }
