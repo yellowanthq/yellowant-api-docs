@@ -2,9 +2,11 @@
 
 A user integration is a unique instance of integration of your application by a user.
 
-{% method %}
+
 
 ## Create a User Integration {#create-a-user-integration}
+
+{% method %}
 
 Creates a new user integration for the authenticating application and user.
 
@@ -15,7 +17,6 @@ An application can create multiple user integrations for an authenticated user, 
 #### Query Parameters : None
 
 > **Info** **Please note that the user can, at any point, change the invoke name of the user application, and therefore you should regularly check for any user application invoke\_name\_changes**
-
 
 
 {% sample lang="py" %}
@@ -44,9 +45,9 @@ The endpoint returns the following JSON data
 
 
 
-{% method %}
-
 ## Delete a User Integration {#delete-a-user-integration}
+
+{% method %}
 
 Deletes a user integration for the authenticating application and user.
 
@@ -73,10 +74,10 @@ The endpoint returns a HTTP 204 status with JSON response
 {% endmethod %}
 
 
+## Update a User Integration {#update-a-user-integration}
 
 {% method %}
 
-## Update a User Integration {#update-a-user-integration}
 
 Updates a user integration for the authenticating application and user with the supplied user\_invoke\_name. In case of the user\_invoke\_name is invalid or is already being used by another user application, the endpoint will return a HTTP\_406 error.
 
