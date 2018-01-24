@@ -12,6 +12,10 @@
   * [Constructing a Message](building-your-application/constructing-a-message.md)
   * [Message Attachments](building-your-application/message-attachments.md)
   * [Message Buttons](building-your-application/message-buttons.md)
+  * [Sending messages to the User](building-your-application/sending-messages-to-the-user.md)
+    * [Simple Messages](building-your-application/sending-messages-to-the-user/simple-messages.md)
+    * [Webhook messages](building-your-application/sending-messages-to-the-user/webhook-messages.md)
+* [Exceptions](exceptions.md)
 
 ## Methods
 
