@@ -24,6 +24,8 @@ Redirect your users to the following URLs
 > **Success** **On a successful redirect, the user will be shown a page, where the user can choose a team account to authenticate**
 
 
+{% method %}
+
 
 ### 2. Get User Token {#2-get-user-token}
 
@@ -41,9 +43,6 @@ Once the user has authenticated, the user will be redirected to the redirect\_ur
 | redirect\_url | The url to redirect the user after authentication |
 | code | The code obtained from the GET parameter |
 
-
-
-{% method %}
 
 {% sample lang="py" %}
 
