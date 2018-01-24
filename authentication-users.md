@@ -77,6 +77,7 @@ The above command returns JSON structured like this:
 }
 ```
 
+{% method %}
 ###3. Revoking a user token
 
 `POST https://www.yellowant.com/api/oauth2/revoke_token/`
@@ -88,3 +89,12 @@ The above command returns JSON structured like this:
 | token | The token to revoke|
 
 
+{% sample lang="py" %}
+```py
+from yellowant import YellowAnt
+
+user_yellowant_object = YellowAnt(access_token=access_token)
+user_yellowant_object.revoke_token(token=access_token)
+
+
+{% endmethod %}
