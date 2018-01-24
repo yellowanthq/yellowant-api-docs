@@ -88,6 +88,7 @@ The above command returns JSON structured like this:
 | :--- | :--- |
 | token | The token to revoke|
 
+The above command returns an HTTP_200 OK message
 
 {% sample lang="py" %}
 ```py
