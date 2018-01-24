@@ -25,6 +25,3 @@ Redirect your users to the following URLs
 
 **On a successful redirect, the user will be shown a page, where the user can choose a team account to authenticate**
 
-  
-
-

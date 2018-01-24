@@ -2,6 +2,7 @@
     "plugins": [ "theme-api", "codetabs"],
     "pluginsConfig": {
         "theme-api": {
+            "theme": "dark",
             "languages": [
                 {
                     "lang": "js",
