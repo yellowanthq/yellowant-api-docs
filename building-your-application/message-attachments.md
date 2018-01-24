@@ -82,21 +82,9 @@ Messages can also contain attachments - which are formatted as a list view withi
 
 | Field\(All optional\) | Description |
 | :--- | :--- |
-| title | The title of the attachment |
-| title\_link | The URL that the user will be taken to on clicking the title |
-| text | The text of the attachment |
-| image\_url | The URL of the image for this attachment |
-| thumb\_url | The URL of the thumbnail of the attachment |
-| color | The color of the attachment text |
-| author\_name | The name of the author \(if referenced in the attachment\) |
-| author\_icon | The icon URL representing the author \(if referenced in the attachment\) |
-| author\_link | The link to the author \(if referenced in the attachment\) |
-| footer | Footer for the attachment |
-| footer\_icon | The icon URL representing the footer information |
-| pretext | A fallback text before the attachment content |
-| ts | A Unix timestamp for the message, shown after the footer |
-| **fields** | An array of fields to be shown below the attachment |
-| **buttons** | An array of buttons to be showed below the attachment |
+| title | The Title of the Field |
+| value | The value of the Field |
+| short | 0 if each field must occupy a row, 1 - if multiple fields can be displayed per row |
 
 
 
