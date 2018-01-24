@@ -98,6 +98,6 @@ from yellowant import YellowAnt
 
 user_yellowant_object = YellowAnt(access_token=access_token)
 user_yellowant_object.revoke_token(token=access_token)
-
+```
 
 {% endmethod %}
