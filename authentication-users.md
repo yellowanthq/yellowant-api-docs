@@ -77,7 +77,14 @@ The above command returns JSON structured like this:
 }
 ```
 
+###3. Revoking a user token
 
+`POST https://www.yellowant.com/api/oauth2/revoke_token/`
 
+### Query Parameters {#query-parameters}
+
+| Parameter | Description |
+| :--- | :--- |
+| token | The token to revoke|
 
 
