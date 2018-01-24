@@ -2,8 +2,9 @@
 
 ## Overview
 
-* [My Awesome API](README.md)
+* [YellowAnt - Introduction](README.md)
 
 ## Methods
 
 * [Defining Methods](methods.md)
+
