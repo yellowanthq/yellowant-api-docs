@@ -65,8 +65,6 @@ user_yellowant_object = YellowAnt(access_token=access_token)
 {% endmethod %}
 
 
-{% common %}
-
 ```
 The above command returns JSON structured like this:
 ```
