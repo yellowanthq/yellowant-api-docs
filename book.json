@@ -1,5 +1,5 @@
 {
-    "plugins": [ "theme-api" ],
+    "plugins": [ "theme-api", "codetabs"],
     "pluginsConfig": {
         "theme-api": {
             "languages": [
