@@ -4,9 +4,11 @@
 
 * [YellowAnt - Introduction](README.md)
 * [Registering your application](registering-your-application.md)
-* [Authentication Users](authentication-users.md)
+* [Authenticating Users](authentication-users.md)
 * [User](user.md)
 * [User Integrations](user-integrations.md)
+* [Building your application](building-your-application.md)
+  * [Processing user commands](building-your-application/processing-user-commands.md)
 
 ## Methods
 
