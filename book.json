@@ -1,5 +1,5 @@
 {
-    "plugins": [ "theme-api", "codetabs"],
+    "plugins": [ "theme-api", "codetabs", "richquotes"],
     "pluginsConfig": {
         "theme-api": {
             "theme": "dark",
