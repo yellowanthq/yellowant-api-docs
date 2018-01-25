@@ -2,7 +2,7 @@
 
 To interact with YellowAnt users, you will first need to create an Application on the YellowAnt developers page.
 
-Go to [https://myteam.yellowant.com/developers/](https://myteam.yellowant.com/developers/) and Register an application. Your application will need a valid Application name, invoke\_name, API URL\(where we will send all user commands\) and redirect URL\(where we will redirect the user after the user authenticates your application\).
+Go to [https://<your-team-subdomain>.yellowant.com/developers/](https://www.yellowant.com/developers/) and Register an application. Your application will need a valid Application name, invoke\_name, API URL\(where we will send all user commands\) and redirect URL\(where we will redirect the user after the user authenticates your application\).
 
 ### Defining Application Functions\(Commands\) and their Arguments
 
