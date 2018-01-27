@@ -1,10 +1,10 @@
-# Message Formatting {#message-formatting}
-
 {% method %}
 
 ## Constructing a basic Message response {#basic-formatting}
 
 After processing the user command, you must respond with a message. YellowAnt messages consist of upper level formatting options along with attachments, attachment fields and attachment buttons.
+
+![](/assets/screenshot-api.slack.com-2018-01-28-03-51-25-409.png)
 
 Let’s look at the structure of a YellowAnt message - it consists of the following fields:
 

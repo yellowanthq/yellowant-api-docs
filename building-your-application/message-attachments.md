@@ -2,7 +2,11 @@
 
 {% method %}
 
-Messages can also contain attachments - which are formatted as a list view within the main message. All fields are optional. Attachments contain the following fields:
+Messages can also contain attachments - which are formatted as a list view within the main message.
+
+![](/assets/screenshot-api.slack.com-2018-01-28-03-51-25-409.png)
+  
+All fields are optional. Attachments contain the following fields:
 
 | Field\(All optional\) | Description |
 | :--- | :--- |

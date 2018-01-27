@@ -2,6 +2,9 @@
 
 {% method %}
 
+![](/assets/screenshot-api.slack.com-2018-01-28-03-51-25-409.png)
+
+
 Message attachments can also contain interactive buttons - which are defined as an array, and displayed in a row at the bottom of the attachment area
 
 | Field | Description |
