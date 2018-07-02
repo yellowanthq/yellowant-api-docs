@@ -2,18 +2,11 @@
 
 ## Get User Profile {#get-user-profile}
 
-{% method %}
-
 Returns the profile details for the authenticated user.
 
 `POST https://api.yellowant.com/api/user/profile/`
 
-
-
-{% sample lang="py" %}
-
-```py
-
+```python
 yellowant_user = YellowAnt(access_token='sdfjbr32p89pdgDFF4p27cQd278p2DWcnp497f')
 profile = yellowant_user.get_user_profile()
 
@@ -22,7 +15,7 @@ user_first_name = profile['first_name']
 user_last_name = profile['last_name']
 ```
 
-```py
+```python
 The endpoint returns the following JSON data
 
 
@@ -41,6 +34,4 @@ The endpoint returns the following JSON data
   }
 }
 ```
-
-{% endmethod %}
 

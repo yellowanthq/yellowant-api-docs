@@ -1,4 +1,4 @@
-# User Authentication {#user-authentication}
+# Authenticating Users
 
 YellowAnt uses the OAuth 2.0 Authentication protocol which allows you to get a YellowAnt user’s information through a token issued to your application.
 
@@ -6,13 +6,13 @@ You need to first register your application on the YellowAnt Developer Platform.
 
 YellowAnt OAuth works in 2 easy steps:
 
-### 1. Authorization {#1-authorization}
+## 1. Authorization {#1-authorization}
 
 Redirect your users to the following URLs
 
 `GET https://www.yellowant.com/api/oauth2/authorize/`
 
-### Query Parameters {#query-parameters}
+## Query Parameters {#query-parameters}
 
 | Parameter | Description |
 | :--- | :--- |
@@ -23,17 +23,13 @@ Redirect your users to the following URLs
 
 > **Success** **On a successful redirect, the user will be shown a page, where the user can choose a team account to authenticate**
 
-
-{% method %}
-
-
-### 2. Get User Token {#2-get-user-token}
+## 2. Get User Token {#2-get-user-token}
 
 Once the user has authenticated, the user will be redirected to the redirect\_url that you set in your application\(and also passed in Step 1\). The redirect url will contain two GET parameters:`code`- A temporary code that will be exchanged for a token`state`- The state variable passed in the URL in Step 1.
 
 `POST https://www.yellowant.com/api/oauth2/token/`
 
-### Query Parameters {#query-parameters}
+## Query Parameters {#query-parameters}
 
 | Parameter | Description |
 | :--- | :--- |
@@ -43,10 +39,7 @@ Once the user has authenticated, the user will be redirected to the redirect\_ur
 | redirect\_url | The url to redirect the user after authentication |
 | code | The code obtained from the GET parameter |
 
-
-{% sample lang="py" %}
-
-```py
+```python
 from yellowant import YellowAnt
 
 code = request.GET.get('code')
@@ -62,43 +55,34 @@ access_token = access_token_dict['access_token']
 user_yellowant_object = YellowAnt(access_token=access_token)
 ```
 
-
-```
+```text
 The above command returns JSON structured like this:
 ```
 
-```py
+```python
 {
   "access_token": "B69$9v7v6#8ydepiuXheTodDWDc33rVYXEviT4d3d",
   "expires": 31536000,
   "refresh_token": "ei7238fFWef7c0oGNb6gd34n087xb390yx8b4x8",  
 }
 ```
-{% endmethod %}
 
-
-
-{% method %}
-###3. Revoking a user token
+## 3. Revoking a user token
 
 `POST https://www.yellowant.com/api/oauth2/revoke_token/`
 
-### Query Parameters {#query-parameters}
+## Query Parameters {#query-parameters}
 
 | Parameter | Description |
 | :--- | :--- |
-| token | The token to revoke|
+| token | The token to revoke |
 
-The above command returns an HTTP_200 OK message
+The above command returns an HTTP\_200 OK message
 
-{% sample lang="py" %}
-
-```py
-
+```python
 from yellowant import YellowAnt
 
 user_yellowant_object = YellowAnt(access_token=access_token)
 user_yellowant_object.revoke_token(token=access_token)
 ```
 
-{% endmethod %}

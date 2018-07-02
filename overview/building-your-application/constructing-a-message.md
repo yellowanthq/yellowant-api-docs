@@ -1,10 +1,10 @@
-{% method %}
+# Constructing a Message
 
 ## Constructing a basic Message response {#basic-formatting}
 
 After processing the user command, you must respond with a message. YellowAnt messages consist of upper level formatting options along with attachments, attachment fields and attachment buttons.
 
-![](/assets/screenshot-api.slack.com-2018-01-28-03-51-25-409.png)
+![](../../.gitbook/assets/screenshot-api.slack.com-2018-01-28-03-51-25-409%20%281%29.png)
 
 Let’s look at the structure of a YellowAnt message - it consists of the following fields:
 
@@ -13,9 +13,7 @@ Let’s look at the structure of a YellowAnt message - it consists of the follow
 | message\_text | The text of the message |
 | **attachments** | The attachments for the message \(Optional\) |
 
-{% sample lang="py" %}
-
-```py
+```python
 import json
 from yellowant.messageformat import MessageClass, MessageAttachmentsClass, MessageButtonsClass
 
@@ -42,10 +40,5 @@ def api_url(request):
         # Handling incorrect verification token
         error_message = {"message_text":"Incorrect Verification token"}
         return HttpResponse(json.dumps(error_message), content_type="application/json")
-
 ```
-
-
-
-{% endmethod %}
 

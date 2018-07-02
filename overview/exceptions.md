@@ -1,4 +1,4 @@
-# Exceptions {#errors}
+# Exceptions
 
 The YellowAnt API uses the following error codes:
 
@@ -16,6 +16,4 @@ The YellowAnt API uses the following error codes:
 | 502 | Bad Gateway – We had a problem with our server. Try again later. |
 | 503 | Service Unavailable – We’re temporarily offline for maintenance. Please try again later. |
 | 504 | Gateway Timeout – The YellowAnt servers are up, but the request could not be processed |
-
-
 

@@ -1,12 +1,8 @@
 # Processing user commands
 
-{% method %}
-
 Remember the application, functions and arguments you created above? Now it’s Magic Time!
 
 Whenever a user sends a command on YellowAnt, YellowAnt parses the command string into a command object and sends your API URL the following data as a POST request:
-
-
 
 | Parameter |
 | :--- |
@@ -26,36 +22,31 @@ Whenever a user sends a command on YellowAnt, YellowAnt parses the command strin
 
 > SUCCESS You now have the function that the user is trying to call along with the arguments for that function. You are now ready to process that command and send a message to the user.
 
+```text
+Below is an example of a Python - Django Application View that handles an API URL request, processes the command and returns a message
 
 
-{% common %}
-
-    Below is an example of a Python - Django Application View that handles an API URL request, processes the command and returns a message
-
-
-    # Sample POST request data to the API URL of a fictional Github application
-    {
-      "data":'{
-        "user": 4534,
-        "verification_token": "bgwreASFth09243rWE134804tnb",
-        "application": 5639,
-        "application_invoke_name": "github-2",
-        "function": 74645,
-        "event_type": "command",
-        "function_name": "create_issue",
-        "event": 5043867,
-        "args": {
-          "repository":"sithlord/vader",
-          "title": "Failed running `bundle exec middleman server`",
-          "body": "I get this error when running bundle exec middleman server - /var/lib/gems/2.3.0/gems/middleman-core-4.2.1/lib/middleman-core/extensions.rb:96:in load: Tried to activate old-style extension: deploy. They are no longer supported. (RuntimeError). I am not a ruby developer so cannot find a way around this."
-        }
-      }'
+# Sample POST request data to the API URL of a fictional Github application
+{
+  "data":'{
+    "user": 4534,
+    "verification_token": "bgwreASFth09243rWE134804tnb",
+    "application": 5639,
+    "application_invoke_name": "github-2",
+    "function": 74645,
+    "event_type": "command",
+    "function_name": "create_issue",
+    "event": 5043867,
+    "args": {
+      "repository":"sithlord/vader",
+      "title": "Failed running `bundle exec middleman server`",
+      "body": "I get this error when running bundle exec middleman server - /var/lib/gems/2.3.0/gems/middleman-core-4.2.1/lib/middleman-core/extensions.rb:96:in load: Tried to activate old-style extension: deploy. They are no longer supported. (RuntimeError). I am not a ruby developer so cannot find a way around this."
     }
+  }'
+}
+```
 
-
-{% sample lang="py" %}
-
-```py
+```python
 import json
 from ghApp import CommandProcessor
 
@@ -77,10 +68,5 @@ def api_url(request):
         # Handling incorrect verification token
         error_message = {"message_text":"Incorrect Verification token"}
         return HttpResponse(json.dumps(error_message), content_type="application/json")
-
 ```
-
-
-
-{% endmethod %}
 
