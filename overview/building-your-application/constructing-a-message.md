@@ -13,6 +13,16 @@ Let’s look at the structure of a YellowAnt message - it consists of the follow
 | message\_text | The text of the message |
 | **attachments** | The attachments for the message \(Optional\) |
 
+{% codetabs name="Python", type="py" -%}
+msg = "Hello World"
+print msg
+{%- language name="JavaScript", type="js" -%}
+var msg = "Hello World";
+console.log(msg);
+{%- language name="HTML", type="html" -%}
+<b>Hello World</b>
+{%- endcodetabs %}
+
 ```python
 import json
 from yellowant.messageformat import MessageClass, MessageAttachmentsClass, MessageButtonsClass
